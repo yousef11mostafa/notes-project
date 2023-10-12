@@ -28,8 +28,12 @@ let obj2=new Object({
 function load_from_localstorage(){
     local_arr=localStorage.getItem("array");
     arr=JSON.parse(local_arr);
-    arr===null?[]:arr;
+   if(arr===null){
+    arr=[];
+   }
+   else{
     create_article();
+   }
 }
 load_from_localstorage();
 
