@@ -1,2 +1,2 @@
 # notes-project
-notes for daily tasks
+https://yousef11mostafa.github.io/notes-project/
