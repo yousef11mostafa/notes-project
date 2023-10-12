@@ -1,0 +1,150 @@
+*{ 
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+     box-sizing: border-box;
+}
+body{
+   margin:0;
+   padding:0;
+   scroll-behavior: smooth;
+   width: 100%;
+   min-height:100vh;
+   background-color:#447;
+   position: relative;
+   padding:5px;
+}
+
+.content{
+    width:700px;
+    background-color: white;
+    margin:100px auto 20px auto;
+    border-radius: 15px;
+}
+@media(max-width:672px){
+    .content{
+        width:100%;
+    }
+    
+}
+.nav{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-color: blue;
+}
+.nav h2{
+    color: white;
+    margin: 0;
+}
+.nav i{
+    position: absolute;
+    right: 0px;
+    font-size: 10px;
+    height: 20px;
+    width: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: white;
+}
+.articles{
+    padding:10px;
+}
+.article{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 0px 5px #888888;
+    margin:5px 0;
+    padding: 5px;
+    transition: .5s;
+}
+.article:hover{
+    box-shadow: 5px 5px 10px #888888;
+}
+.article .icons button{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-left:15px;
+    padding:7px;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 50%;
+    position: relative;
+}
+.article .icons i{
+    color: white;
+    font-size: 12px;
+    cursor:pointer;
+}
+
+.article .icons button:first-child{
+     background-color: blue;
+} 
+.article .icons button:nth-child(2) {
+  background-color: green;
+}
+.article .icons button:last-child {
+  background-color: brown;
+}
+.article .text .name{
+     padding: 0;
+     margin:5px;
+     text-align: end;
+}
+.article .text .date{
+    display: flex;
+    align-items: center;
+}
+.article .text .date {
+    display: flex;
+    align-items: center;
+}
+.article .text .date p{
+    padding: 0;
+    margin: 0;
+    margin-right: 5px;
+}
+
+
+.alert{
+    background-color: black;
+    position: absolute;
+    left: 50%;
+    top:0px;
+    transform: translateX(-50%);
+    color:white;
+    padding:10px 5px;
+    display: none;
+    transition-duration:3s;
+}
+.alert p{
+    margin: 8px;
+    font-size: 15px;
+}
+.alert p:nth-child(2){
+    direction: rtl;
+}
+.alert form input{
+    width:250px;
+    background-color: transparent;
+    border:1px solid white;
+    color:white;
+    padding:3px;
+}
+.alert form input:focus{
+    outline: none;
+    border:1px solid blue;
+}
+.alert .controls{
+    text-align: end;
+    margin-top: 10px;
+}
+.alert button{
+    background-color: transparent;
+    border: none;
+    color: white;
+}
